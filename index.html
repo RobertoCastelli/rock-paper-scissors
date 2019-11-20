@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>rock-paper-scissors</title>
+</head>
+
+<body>
+    <div class="container mt-3 text-center bg-dark rounded text-secondary">
+        <h4 class="title text-success pt-3">ROCK PAPER SCISSORS</h4>
+
+        <div class="row text-center pt-3">
+            <p id="player_computer" class="col-6">COMPUTER</p>
+            <p id="player_player" class="col-6">PLAYER</p>
+        </div>
+
+        <div class="row text-center">
+            <p id="score_left" class="col-6">0</p>
+            <p id="score_right" class="col-6">0</p>
+        </div>
+
+        <div class="row text-center">
+            <img id="img_left" src="https://via.placeholder.com/100" class="col-6"></img>
+            <img id="img_right" src="https://via.placeholder.com/100" class="col-6"></img>
+        </div>
+
+        <div class="row text-center mt-3">
+            <p id="game_message" class="col-12">choose your weapon</p>
+        </div>
+
+        <div class="row">
+            <button id="btnRock" class="col-3 btn btn-secondary m-3">rock</button>
+            <button id="btnPaper" class="col-3 btn btn-secondary m-3">paper</button>
+            <button id="btnScissors" class="col-3 btn btn-secondary m-3">scissors</button>
+        </div>
+
+    </div>
+
+    <footer class="text-center mt-3">
+        copyright &copy; 2019 Roberto Castelli www.robertocastelli.dev
+    </footer>
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
