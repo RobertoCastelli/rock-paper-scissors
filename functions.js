@@ -18,7 +18,7 @@ function score() {
 };
 
 function endGame() {
-    if (scoreL == 5 || scoreR == 5) {
+    if (scoreL == 3 || scoreR == 3) {
         btnPaper.disabled = true;
         btnRock.disabled = true;
         btnScissors.disabled = true;
@@ -36,11 +36,17 @@ function countdown() {
     let n = 3;
     count();
     function count() {
+        imgLeft.classList.add('mover');
+        imgRight.classList.add('mover');
+        imgRight.src = 'img/right-hand.png';
+        imgLeft.src = 'img/left-hand.png';
         message.innerHTML = n;
         if (n == 0) {
             computerChoice();
             score();
             endGame();
+            imgLeft.classList.remove('mover');
+            imgRight.classList.remove('mover');
         } else {
             n -= 1;
             setTimeout(count, 1000);

@@ -26,8 +26,8 @@ let imageArray = [rock, paper, scissors];
 let scoreL = 0;
 let scoreR = 0;
 
-imgLeft.src = 'img/hands.jpg';
-imgRight.src = 'img/hands.jpg';
+imgLeft.src = 'img/robot.jpg';
+imgRight.src = 'img/player.jpg';
 
 btnRock.addEventListener('click', () => {
     disableButtons(true);
@@ -35,7 +35,7 @@ btnRock.addEventListener('click', () => {
         playerChoice = rock;
         imgRight.src = rock;
         disableButtons(false);
-    }, 3000);
+    }, 3050);
     countdown();
 });
 
@@ -45,7 +45,7 @@ btnPaper.addEventListener('click', () => {
         playerChoice = paper;
         imgRight.src = paper;
         disableButtons(false);
-    }, 3000);
+    }, 3050);
     countdown();
 });
 
@@ -55,7 +55,7 @@ btnScissors.addEventListener('click', () => {
         playerChoice = scissors;
         imgRight.src = scissors;
         disableButtons(false);
-    }, 3000);
+    }, 3050);
     countdown();
 });
 
