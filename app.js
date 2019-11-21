@@ -1,10 +1,8 @@
 /**
  * TODO
- * countdown
  * animation
  * sounds
  * starting image
- * disable buttons at 10
  */
 
 let btnRock = document.getElementById('btnRock');
@@ -15,37 +13,49 @@ let imgLeft = document.getElementById('img_left');
 let message = document.getElementById('game_message');
 let scoreLeft = document.getElementById('score_left');
 let scoreRight = document.getElementById('score_right');
+let buttons = document.getElementsByTagName('button');
 
 let rock = 'img/rock.png';
 let paper = 'img/paper.png';
 let scissors = 'img/scissors.png';
 
 let computerNumber;
-let playerNumber;
+let playerChoice;
 let imageArray = [rock, paper, scissors];
 
 let scoreL = 0;
 let scoreR = 0;
 
+imgLeft.src = 'img/hands.jpg';
+imgRight.src = 'img/hands.jpg';
+
 btnRock.addEventListener('click', () => {
-    imgRight.src = rock;
-    playerNumber = 0;
-    computerChoice();
-    score();
-    endGame();
+    disableButtons(true);
+    setTimeout(() => {
+        playerChoice = rock;
+        imgRight.src = rock;
+        disableButtons(false);
+    }, 3000);
+    countdown();
 });
+
 btnPaper.addEventListener('click', () => {
-    imgRight.src = paper;
-    playerNumber = 1;
-    computerChoice();
-    score();
-    endGame();
+    disableButtons(true);
+    setTimeout(() => {
+        playerChoice = paper;
+        imgRight.src = paper;
+        disableButtons(false);
+    }, 3000);
+    countdown();
 });
+
 btnScissors.addEventListener('click', () => {
-    imgRight.src = scissors;
-    playerNumber = 2;
-    computerChoice();
-    score();
-    endGame();
+    disableButtons(true);
+    setTimeout(() => {
+        playerChoice = scissors;
+        imgRight.src = scissors;
+        disableButtons(false);
+    }, 3000);
+    countdown();
 });
 
