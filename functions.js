@@ -54,7 +54,7 @@ function disableButtons(bool) {
 
 function count() {
     hands.forEach(hand => hand.classList.add('shaker'));
-    imgLeft.src = 'img/rock-left.png';
+    imgLeft.src = 'img/rock.png';
     imgRight.src = 'img/rock.png';
     disableButtons(true);
 };
