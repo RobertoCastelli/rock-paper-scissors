@@ -53,9 +53,9 @@ function disableButtons(bool) {
 };
 
 function count() {
-    imgLeft.src = 'img/rock.png';
-    imgRight.src = 'img/rock.png';
     hands.forEach(hand => hand.classList.add('shaker'));
+    imgLeft.src = 'img/rock-left.png';
+    imgRight.src = 'img/rock.png';
     disableButtons(true);
 };
 
