@@ -12,6 +12,10 @@ p {
     background-color: lightgrey;
 }
 
+/* #img_left {
+    transform: rotateY(180deg);
+} */
+
 /* ANIMATION */
 .shaker {
     animation-name: shaker;
